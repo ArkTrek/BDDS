@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Symptoms</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Symptoms</h2>
+        <form method="POST" action="/disease">
+            <!-- Default value is set to "headache" for demo -->
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" cols="50">headache</textarea><br>
+            
+            <button type="submit">Submit Symptoms</button>
+        </form>
+        <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+    </div>
+</body>
+</html>

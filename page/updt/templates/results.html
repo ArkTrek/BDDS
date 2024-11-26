@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Scan Results</h2>
+        <p>Possible Disease Detected: {{ result }}</p>
+        <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "user_id": 0,
+        "username": "john_doe",
+        "password": "password123",
+        "name": "John Doe",
+        "age": 30,
+        "gender": "Male",
+        "contact": "1234567890",
+        "symptoms": []
+    },
+    {
+        "user_id": 1,
+        "username": "arpitt",
+        "password": "arpit",
+        "name": "Arpit",
+        "age": 21,
+        "gender": "M",
+        "contact": "9072001357",
+        "symptoms": "headache"
+    },
+    {
+        "age": "20",
+        "contact": "9072001357",
+        "gender": "Male",
+        "name": "arpit",
+        "password": "arpit",
+        "username": "arpi",
+        "user_id": 2,
+        "symptoms": "headache"
+    }
+]

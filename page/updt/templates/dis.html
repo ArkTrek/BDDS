@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possible Disease Suggestions</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Possible Disease Suggestions</h2>
+        
+        {% if diseases %}
+            <ul>
+                {% for disease in diseases %}
+                    <li>{{ disease }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No diseases matched your symptoms.</p>
+        {% endif %}
+        <a href="{{ pdf_url }}" download="symptoms_report.pdf">Download Report</a>
+		<button onclick="window.location.href='/bookings'">Book an Appointment</button>
+        <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+    </div>
+</body>
+</html>
